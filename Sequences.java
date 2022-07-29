@@ -3,19 +3,19 @@ import java.util.Scanner;
 public class Sequences {
     public static void main(String[] args) {
 
-        int n,b=1;
+        int n1,i;
         Scanner input=new Scanner(System.in);
-        n=input.nextInt();
-        if (n==0){
-            System.exit(0);
-        }
-else {
-            System.out.print(b);
-    for (int i=2;i<=n;i++){
+       while ((n1=input.nextInt())!=0){
 
-        System.out.print(" "+i);
-    }System.out.print("\n");
-        }
+           for ( i=1;i<=n1;i++){
+               if (i==n1){
+               System.out.print(n1+"\n");
+           }
+               else {
+                   System.out.print(i+" ");
+               }
 
+           }
+       }
     }
 }
