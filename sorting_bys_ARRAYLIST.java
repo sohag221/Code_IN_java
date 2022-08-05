@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Scanner;
-
 public class sorting_bys_ARRAYLIST {
     public static void main(String[] args) {
         ArrayList<Integer> number=new ArrayList<>();
