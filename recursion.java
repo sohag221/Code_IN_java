@@ -1,6 +1,6 @@
 public class recursion {
     int fact(int number){
-        if (number==1 && number==0){
+        if (number==1 || number==0){
             return 1;
         }
         else {
