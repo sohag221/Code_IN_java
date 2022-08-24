@@ -33,7 +33,7 @@ class slst{
         }
 
         Node currNode=new Node(data);
-        while(currNode.next==null){
+        while(currNode.next!=null){
             currNode=currNode.next;
         }
         currNode.next=newNode;
