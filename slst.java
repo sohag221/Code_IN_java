@@ -61,7 +61,6 @@ class slst{
             System.out.println("The list is empty!");
             return;
         }
-
         head=head.next;
         size--;
     }
@@ -71,13 +70,12 @@ class slst{
         if(head==null){
             System.out.println("The list is empty!");
             return;
-        }
+       }
         size--;
         if(head.next==null){
             head=null;
             return;
         }
-
         Node scdlstN=head;
         Node lstN=head.next;
         while(lstN.next!=null){
@@ -85,8 +83,9 @@ class slst{
             lstN=lstN.next;
         }
         scdlstN.next=null;
-
     }
+    
+    //size;
     public int getsize(){
         return size;
     }
@@ -105,8 +104,6 @@ class slst{
         }
         head.next=null;
         head=preNode;
-
-
     }
     Node reverse(Node head){
         if (head==null || head.next==null) {
@@ -118,11 +115,7 @@ class slst{
         head.next=head;
         head=null;
         return newNode;
-
-
     }
-
-
 
     public static void main(String[] args) {
 
