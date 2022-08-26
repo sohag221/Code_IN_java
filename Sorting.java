@@ -45,6 +45,24 @@ public class Sorting {
             System.out.print(Array[i]+" ");
         }
     }
+    // insertion;
+    public static void InSortig(int Array[]){
+      for(int i=0;i<Array.length;i++){
+      
+      int temp=Array[i];
+          int j=i-1;
+          while( j>=0 && Array[j]>temp){
+              Array[j+1]=Array[j];
+            j--;
+          }
+          Array[j+1]=temp;
+            
+      
+      }
+    
+    }
+    
+    
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
         int s=input.nextInt();
